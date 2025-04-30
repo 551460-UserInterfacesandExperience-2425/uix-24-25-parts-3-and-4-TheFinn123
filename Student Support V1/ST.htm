@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Set up page to work on all devices and characters -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Tutor Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Containers -->
+    <div class="phone-wrapper">
+        <div class="st-container">
+
+            <!-- Editable text box and Enter button -->
+            <input type="text" class="general-input-box" placeholder="Student ID..." />
+            <button id="stEnterButton" class="enter-button">Enter</button>
+
+            <!-- This appears after pressing the Enter button -->
+            <div class="st-status-display" style="display: none; flex-direction: column; gap: 20px;">
+
+                <!-- Status + Image -->
+                <div class="st-info-section">
+                    <div class="st-status-box">Student Status</div>
+                    <div class="st-image-box">
+                        <img src="NeutralFace.png" alt="Neutral Face">
+                    </div>
+                </div>
+
+                <!-- Meeting list -->
+                <div class="st-meetings-box">
+                    <div class="st-meeting-entry">Meeting 1</div>
+                    <div class="st-meeting-entry">Meeting 2</div>
+                    <div class="st-meeting-entry">Meeting 3</div>
+                    <div class="st-meeting-entry">Meeting 4</div>
+                    <div class="st-meeting-entry">Meeting 5</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to handle button click -->
+    <script>
+        document.getElementById('stEnterButton').addEventListener('click', function () {
+            document.querySelector('.st-status-display').style.display = 'flex';
+        });
+    </script>
+
+</body>
+</html>

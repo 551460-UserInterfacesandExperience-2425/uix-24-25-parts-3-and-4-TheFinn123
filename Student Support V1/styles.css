@@ -1,0 +1,288 @@
+/* General Use*/
+
+/* Gives a phone-like frame */
+.phone-wrapper {
+    width: 390px;
+    height: 844px;
+    margin: 50px auto;
+    background: white;
+    border: 5px solid #0E1647;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.general-input-box {
+    width: 80%;
+    padding: 8px 12px;
+    background: white;
+    border: 5px solid #0E1647;
+    border-radius: 12px;
+    font-size: 26px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: black;
+    margin: 0 auto 20px auto;
+    display: block;
+}
+
+    .general-input-box::placeholder {
+        color: rgba(0, 0, 0, 0.42);
+    }
+
+.enter-button {
+    width: 80%;
+    padding: 10px;
+    background-color: #0E1647;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 10px auto;
+    display: block;
+    cursor: pointer;
+}
+
+/* Status box used in student and ST */
+.status-box {
+    margin-top: 10px;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Meetings section used by PS and Student Page */
+/* Hide meetings section initially */
+.meetings-section {
+    display: none;
+}
+
+.meetings-title {
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+    font-size: 26px;
+    color: white;
+    background-color: #0E1647;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.meeting-time {
+    margin: 10px 0;
+    background: white;
+    color: #101644;
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+    font-size: 26px;
+    border-radius: 20px;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.meetings-list {
+    background: white;
+    border: 5px solid #0E1647;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* Meetings title */
+.meetings-header {
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+    font-size: 26px;
+    color: white;
+    background-color: #0E1647;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meetings-selected {
+    background-color: #DDF688 !important;
+    color: #101644;
+}
+
+/* Login Page Only */
+
+/* Container box for everything */
+.login-container {
+    width: 360px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border: 5px solid #0E1647;
+    border-radius: 30px;
+    text-align: center;
+}
+
+/* Login page title */
+h1 {
+    color: #101644;
+    font-size: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    word-wrap: break-word;
+    margin-bottom: 40px;
+}
+
+/* Input fields for Email and Password */
+.login-inputs {
+    width: 80%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #0E1647;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+    /* Placeholder text inside the input fields */
+    .login-inputs::placeholder {
+        color: rgba(0, 0, 0, 0.42);
+        font-size: 30px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        word-wrap: break-word;
+    }
+
+/* Login buttons: Student, PS, ST */
+.login-buttons {
+    width: 80%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #0E1647;
+    color: white;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/* Student Only */
+
+/* Container */
+.student-container {
+    width: 360px;
+    margin: 16px auto;
+    background: white;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.student-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+    .student-icons img {
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+    }
+
+/* PS Only */
+.ps-container {
+    width: 360px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+/* Header area including input and button */
+.ps-header {
+    background: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Senior Tutor*/
+
+/* Container */
+.st-container {
+    width: 360px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+    text-align: center;
+}
+
+.st-meeting-entry {
+    margin: 5px 0;
+}
+
+/* Displays both the status text and emoji */
+.st-info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+/* Student Status Text Box */
+.st-status-box {
+    background-color: white;
+    border: 5px solid #0E1647;
+    border-radius: 20px;
+    padding: 30px 20px;
+    font-size: 26px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #101644;
+    width: 70%;
+    text-align: center;
+    box-sizing: border-box;
+    min-height: 300px;
+}
+
+/* Image box with border */
+.st-image-box {
+    width: 88px;
+    height: 88px;
+    background: white;
+    border: 5px solid #0E1647;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .st-image-box img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+/* Meetings Box */
+.st-meetings-box {
+    background: white; 
+    border: 5px solid #0E1647;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+    font-size: 26px;
+    color: #101644;
+}
+

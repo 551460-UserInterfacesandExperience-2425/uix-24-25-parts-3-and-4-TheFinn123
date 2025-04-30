@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Set up page to work on all devices and characters -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Support Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- Containers -->
+<body>
+    <div class="phone-wrapper">
+        <div class="ps-container">
+
+            <!-- Text box to enter a student ID and enter button -->
+            <div class="ps-header">
+                <input type="text" placeholder="Student ID..." class="general-input-box">
+            </div>
+            <button class="enter-button">Enter</button>
+
+            <!-- This appears after pressing the Enter button -->
+            <div class="meetings-section">
+                <div class="meetings-header">Meetings</div>
+
+                <div class="meetings-list">
+                    <button class="meeting-time">09:30</button>
+                    <button class="meeting-time">11:00</button>
+                    <button class="meeting-time">12:15</button>
+                    <button class="meeting-time">14:45</button>
+                    <button class="meeting-time">16:30</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript to handle enter button click -->
+    <script>
+        document.querySelector('.enter-button').addEventListener('click', function () {
+            document.querySelector('.meetings-section').style.display = 'block';
+        });
+    </script>
+
+    <!-- JavaScript to handle meeting button clicks -->
+    <script>
+        const meetingButtons = document.querySelectorAll('.meeting-time');
+
+        meetingButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                button.classList.toggle('meetings-selected');
+            });
+        });
+    </script>
+</body>
+</html>
