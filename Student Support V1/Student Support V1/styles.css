@@ -240,6 +240,20 @@ h1 {
         border-radius: 10px;
     }
 
+.student-container .status-box {
+    min-height: unset;
+    padding: 0;
+    border: none;
+    text-align: center;
+}
+
+.student-container .general-input-box {
+    width: 130%;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px auto;
+}
+
 /* PS Only */
 .ps-container {
     width: 360px;
