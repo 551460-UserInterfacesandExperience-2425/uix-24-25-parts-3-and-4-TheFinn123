@@ -121,6 +121,7 @@
     border: 5px solid #0E1647;
     border-radius: 30px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 /* Login page title */
